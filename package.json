@@ -1,0 +1,15 @@
+{
+  "name": "permissions-demos",
+  "version": "0.1.0",
+  "description": "Discover exactly what each Chrome extension permission does.",
+  "author": "Jack Steam <jacksteamdev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^7.3.0",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.116"
+  }
+}
