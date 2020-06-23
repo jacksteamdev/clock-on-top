@@ -1,0 +1,20 @@
+.clockOnTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 100%;
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+
+  color: #000000;
+
+  z-index: 1000;
+}
