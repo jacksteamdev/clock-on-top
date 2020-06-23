@@ -1,3 +1,10 @@
+/**
+ * @import might not work cross origins, but you can use remote font urls
+ * Download the css file from the link below and include it in your extension
+ *
+ * @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ */
+
 .clockOnTop {
   position: fixed;
   bottom: 1rem;
