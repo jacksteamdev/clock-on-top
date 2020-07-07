@@ -1,7 +1,7 @@
 {
-  "name": "permissions-demos",
+  "name": "clock-on-top",
   "version": "0.1.0",
-  "description": "Discover exactly what each Chrome extension permission does.",
+  "description": "A Chrome extension to show the time on every page",
   "author": "Jack Steam <jacksteamdev@gmail.com>",
   "license": "MIT",
   "private": true,
