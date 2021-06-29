@@ -1,0 +1,34 @@
+/**
+ * Content scripts are now bound by the host CSP
+ * A solution for this would be to include the font as a data uri
+ *
+ * This data uri would be too large for our limited needs,
+ * But we can shrink it by subsetting the font
+ * https://oreillymedia.github.io/Using_SVG/extras/ch07-dataURI-fonts.html
+
+ * We may want to load our fonts via JS also
+ * https://medium.com/@matuzo/getting-started-with-css-font-loading-e24e7ffaa791
+
+ * @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ */
+
+.clockOnTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 100%;
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+
+  color: #000000;
+
+  z-index: 1000;
+}
