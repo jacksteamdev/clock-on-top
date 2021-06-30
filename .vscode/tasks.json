@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "npm: dev",
+      "detail": "rollup -c -w",
+      "presentation": {
+        "group": "build"
+      }
+    },
+    {
+      "type": "shell",
+      "command": "pnpm",
+      "args": ["lint", "--", "--watch"],
+      "problemMatcher": ["$tsc-watch"],
+      "label": "npm: lint",
+      "detail": "tsc --noEmit",
+      "presentation": {
+        "group": "build"
+      }
+    },
+    {
+      "label": "dev build tasks",
+      "dependsOn": ["npm: dev", "npm: lint"],
+      "dependsOrder": "parallel",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

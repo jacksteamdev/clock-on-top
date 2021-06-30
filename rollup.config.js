@@ -1,11 +1,12 @@
-import path from 'path'
-
-import resolve from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
-import typescript from '@rollup/plugin-typescript'
+/* eslint-env node */
 
 import { chromeExtension, simpleReloader } from 'rollup-plugin-chrome-extension'
+
+import commonjs from '@rollup/plugin-commonjs'
 import { emptyDir } from 'rollup-plugin-empty-dir'
+import path from 'path'
+import resolve from '@rollup/plugin-node-resolve'
+import typescript from '@rollup/plugin-typescript'
 import zip from 'rollup-plugin-zip'
 
 const isProduction = process.env.NODE_ENV === 'production'
