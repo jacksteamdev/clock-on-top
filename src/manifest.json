@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["https://*/*", "http://*/*"],
-      "js": ["content.js"],
+      "js": ["content.ts"],
       "css": ["roboto.css", "content.css"]
     }
   ],

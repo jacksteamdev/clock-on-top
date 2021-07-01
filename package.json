@@ -8,8 +8,8 @@
   "scripts": {
     "build": "rollup -c",
     "release": "cross-env NODE_ENV=production rollup -c",
-    "start": "rollup -c -w",
-    "test": "jest"
+    "dev": "rollup -c -w",
+    "lint": "tsc --noEmit --watch"
   },
   "dependencies": {
     "@types/chrome": "^0.0.127"
